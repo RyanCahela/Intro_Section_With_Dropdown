@@ -1,23 +1,11 @@
 // next component imports
 import Head from "next/head";
-import Image from "next/image";
 
-// component Imports
+// Component Imports
 import Header from "../components/Header/Header";
-import DatabizLogoSVG from "../components/SVG/DatabizLogoSVG";
-import AudiophileLogoSVG from "../components/SVG/AudiophileLogoSVG";
-import MeetLogoSVG from "../components/SVG/MeetLogoSVG";
-
-// Custom Hooks imports
-import useMediaQuery from "../components/Hooks/UseMediaQuery";
-
-// Image Imports
-import heroImageDesktop from "../public/images/image-hero-desktop.png";
-import heroImageMobile from "../public/images/image-hero-mobile.png";
+import Main from "../components/Main/Main";
 
 export default function Home() {
-  const isBreakpoint = useMediaQuery(375);
-
   return (
     <div>
       <Head>
@@ -26,35 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
-      <main>
-        <section>
-          <h1>Make remote work</h1>
-          <p>
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <a href="#">Learn more</a>
-          <ul>
-            <li>
-              <DatabizLogoSVG />
-            </li>
-            <li>
-              <AudiophileLogoSVG />
-            </li>
-            <li>
-              <MeetLogoSVG />
-            </li>
-          </ul>
-        </section>
-        <section>
-          {isBreakpoint ? (
-            <Image src={heroImageMobile} alt="man using laptop" />
-          ) : (
-            <Image src={heroImageDesktop} alt="man using laptop" />
-          )}
-        </section>
-      </main>
+      <Main />
     </div>
   );
 }
