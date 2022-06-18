@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import MenuSVG from "../SVG/Icons/MenuSVG";
 import CloseMenuSVG from "../SVG/Icons/CloseMenuSVG";
 
+import FeaturesDropdown from "./FeaturesDropdown";
+import CompanyDropdown from "./CompanyDropdown";
+
 const mobileNavClasses = `
   ${/* Layout */ ""}
   flex 
   flex-col
+  gap-4
 
   fixed
   top-0
   right-0
   z-30
   
-  w-[70vw]
+  w-[60vw]
   h-full
 
   pl-6
@@ -21,6 +25,7 @@ const mobileNavClasses = `
   
   ${/* Colors */ ""}
   bg-white
+  text-gray-500
 
 
   ${/* Transforms */ ""}
@@ -64,25 +69,19 @@ const MobileNav = () => {
         className={`${mobileNavClasses} ${
           isOpen ? mobileNavActiveClasses : ""
         }`}>
-        <button>Features</button>
-        <ul>
-          <li>Todo List</li>
-          <li>Calendar</li>
-          <li>Reminders</li>
-          <li>Planning</li>
-        </ul>
-        <button>Careers</button>
-        <ul>
-          <li>history</li>
-          <li>Our Team</li>
-          <li>Blog</li>
-        </ul>
+        <FeaturesDropdown />
+        <CompanyDropdown />
+
         <a href="#">Careers</a>
         <a href="#">About</a>
 
-        <div>
+        <div className="flex flex-col mt-4 items-center gap-4">
           <a href="#">Login</a>
-          <a href="#">Register</a>
+          <a
+            className="border-black border border-solid self-stretch text-center py-2 rounded-lg border-"
+            href="#">
+            Register
+          </a>
         </div>
       </nav>
     </div>
