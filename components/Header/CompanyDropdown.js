@@ -36,7 +36,7 @@ const CompanyDropdown = () => {
         <span>{isOpen ? <ArrowDownSVG /> : <ArrowUpSVG />}</span>
       </button>
       <ul className={`${ulClasses} ${isOpen ? ulActiveClasses : ""}`}>
-        <li>history</li>
+        <li>History</li>
         <li>Our Team</li>
         <li>Blog</li>
       </ul>
