@@ -50,7 +50,7 @@ const backdropClasses = `
   `;
 
 const backdropActiveClasses = `
-  before:bg-black/50
+  before:bg-black/80
 `;
 
 const MobileNav = () => {

@@ -12,7 +12,7 @@ import useMediaQuery from "../Hooks/UseMediaQuery";
 import { BREAKPOINT } from "../Constants/Breakpoints";
 
 const headerClasses = `
-  ${/* Layout */ ""}}
+  ${/* Layout */ ""}
   p-4
   flex  
 
@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className={headerClasses}>
       <HeaderLogo />
-      <div className="ml-auto">
+      <div className="flex-auto">
         {isBreakpoint ? <MobileNav /> : <DesktopNav />}
       </div>
     </header>

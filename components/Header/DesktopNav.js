@@ -1,34 +1,32 @@
 import React from "react";
 import ArrowDownSVG from "../SVG/Icons/ArrowDownSVG";
+import FeaturesDropdownDesktop from "./FeaturesDropdownDesktop";
 
 const DesktopNav = () => {
   return (
-    <nav className="">
-      <ul className="">
+    <nav className="flex text-gray-500">
+      <ul className="flex gap-10 pl-[60px]">
         <li>
-          <button>
-            <div>Features</div>
-            <ArrowDownSVG />
-          </button>
+          <FeaturesDropdownDesktop />
         </li>
         <li>
           <button>
-            <div>Company</div>
+            <div className="hover:text-black cursor-pointer">Company</div>
             <ArrowDownSVG />
           </button>
         </li>
-        <li>
+        <li className="hover:text-black cursor-pointer">
           <a href="#">Careers</a>
         </li>
-        <li>
+        <li className="hover:text-black cursor-pointer">
           <a href="#">About</a>
         </li>
       </ul>
-      <ul className="">
-        <li>
+      <ul className="ml-auto flex gap-10">
+        <li className="hover:text-black cursor-pointer">
           <a href="#">Login</a>
         </li>
-        <li>
+        <li className="hover:text-black cursor-pointer">
           <a href="#">Register</a>
         </li>
       </ul>
