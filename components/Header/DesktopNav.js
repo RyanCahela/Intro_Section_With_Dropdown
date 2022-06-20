@@ -1,19 +1,17 @@
 import React from "react";
 import ArrowDownSVG from "../SVG/Icons/ArrowDownSVG";
-import FeaturesDropdownDesktop from "./FeaturesDropdownDesktop";
+import FeaturesDropdown from "./Dropdown/FeaturesDropdown";
+import CompanyDropdown from "./Dropdown/CompanyDropdown";
 
 const DesktopNav = () => {
   return (
     <nav className="flex text-gray-500">
       <ul className="flex gap-10 pl-[60px]">
         <li>
-          <FeaturesDropdownDesktop />
+          <FeaturesDropdown />
         </li>
         <li>
-          <button>
-            <div className="hover:text-black cursor-pointer">Company</div>
-            <ArrowDownSVG />
-          </button>
+          <CompanyDropdown />
         </li>
         <li className="hover:text-black cursor-pointer">
           <a href="#">Careers</a>

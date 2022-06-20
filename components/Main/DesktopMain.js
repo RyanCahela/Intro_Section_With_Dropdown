@@ -24,9 +24,13 @@ const DesktopMain = () => {
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <a href="#">Learn more</a>
+          <a
+            className="tracking-[0.22px] text-gray-50 bg-black py-3 px-5 rounded-2xl font-bold self-start hover:bg-white hover:outline-2 hover:outline-black hover:outline hover:text-black transition-colors"
+            href="#">
+            Learn more
+          </a>
 
-          <ul className="flex">
+          <ul className="flex gap-10">
             <li>
               <DatabizLogoSVG />
             </li>

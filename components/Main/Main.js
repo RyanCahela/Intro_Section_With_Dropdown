@@ -12,7 +12,11 @@ import DesktopMain from "./DesktopMain";
 
 const Main = () => {
   const isBreakpoint = useMediaQuery(BREAKPOINT);
-  return <>{isBreakpoint ? <MobileMain /> : <DesktopMain />}</>;
+  return (
+    <div className="max-w-6xl mx-auto">
+      {isBreakpoint ? <MobileMain /> : <DesktopMain />}
+    </div>
+  );
 };
 
 export default Main;

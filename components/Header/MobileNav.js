@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import MenuSVG from "../SVG/Icons/MenuSVG";
 import CloseMenuSVG from "../SVG/Icons/CloseMenuSVG";
 
-import FeaturesDropdown from "./FeaturesDropdown";
-import CompanyDropdown from "./CompanyDropdown";
+import FeaturesDropdown from "./Dropdown/FeaturesDropdown";
+import CompanyDropdown from "./Dropdown/CompanyDropdown";
 
 const mobileNavClasses = `
   ${/* Layout */ ""}

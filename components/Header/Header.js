@@ -15,7 +15,6 @@ const headerClasses = `
   ${/* Layout */ ""}
   p-4
   flex  
-
 `;
 
 const Header = () => {
